@@ -60,7 +60,7 @@ For this to work, a matchmaking service is used. Using the live database from th
 | Remaining player slots     | 1.5    |
 | Server age                 | 1.2    |
 
-apple strudel uses a few more factors, which we won't cover because ummm secret :3.
+apple strudel uses a few more factors, which we won't cover because we would like to keep them private.
 
 Some notes on a few of the variables:
 - Server performance is measured by taking the server's heartbeat deltatime and dividing it by a target deltatime (in this case 60). Servers with a faster heartbeat than 60 will have a higher weight, pushing the server out on the sort. This does require unlocking the server physics FPS on behalf of the user, though.
@@ -112,7 +112,7 @@ strproxy has many benefits over other "traditional" methods of hosting. This pap
 ## Conclusion
 Of course, strproxy is not a perfect solution. It's very complex for us, and the additional latency overhead will likely impact gameplay. But now, we can have a balance between security, performance, and ease of use, where before, there was no choice that offered all three, but only two at a time, for example security, performance, but hard to use, or easy to use and secure, but slow.
 
-As this is such a complex system, we do not expect that everyone will make their own implementation of this system. Therefore, we have made strproxy free and open source to use under the MIT license, available at https://github.com/konasquared/proxy.strdel.xyz. We invite you to contribute, make pull requests, improve our code, and suggest general improvements, too.
+As this is such a complex system, we do not expect that everyone will make their own implementation of this system. Therefore, we have made strproxy free and open source to use under the MIT license, available at https://github.com/konasquared/strproxy. We invite you to contribute, make pull requests, improve our code, and suggest general improvements, too.
 
 ## Footnotes
 [1] As of writing, apple strudel only operates one proxy server in Europe, as traffic is low enough that we do not need any more. We are planning to add another proxy server in the US as a lot of users in the revival community are based in the US (from basic observations) and this would be best for them.
